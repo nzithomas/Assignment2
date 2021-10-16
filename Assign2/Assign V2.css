@@ -1,0 +1,67 @@
+.logo {
+  width: 68px;
+  height: 99px;
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.51;
+  letter-spacing: normal;
+  text-align: left;
+  color: #eb2929;
+}
+
+.contour-logo {
+  width: 147px;
+  height: 147px;
+  margin: 18px 258px 22px 304px;
+  padding: 18px 40px 24px 39px;
+  border: solid 1px #707070;
+  border-radius: 70px;
+  background-color: #fff;
+  /*background-color: inherit;*/
+}
+
+.Backgrounds-images {
+    height: 480px; 
+    width: 1366px;
+    margin: 0 0 48px;
+    padding: 17px 101px 81px 306px;
+    background-image: url("Background_V2.png");
+    /*background-image: linear-gradient(to bottom, rgba(157, 14, 14, 0), #4f0707);*/
+
+  }
+
+  .part_one_pos_logacc {
+    float:right;
+    margin-top: 15px;
+    margin-right: 60px;
+    }
+
+.part_one_flogin {
+    border:none;
+    background: inherit;
+    color: #fff;
+   }
+    
+.part_one_fcaccount{
+  width: 181px;
+  height: 46px;
+  margin: 0 0 0 26px;
+  padding: 12px 14px 11px 15px;
+  border-radius: 3px;
+  border: solid 1px #fff;
+  background: inherit;
+  color: #fff;
+  }
+
+
+
+
+  
+
+  
+
+
+
