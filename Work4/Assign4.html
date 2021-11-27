@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+        <title>Edureka Class JAVASCRIPT for ASSIGNMENT 4</title>
+        <meta charset = "UTF-8"/>
+        <meta author = "N'ZI Yao Thomas d'Aquin " keyword= "webpage, Static"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        
+   </head>
+   
+
+<body>
+
+<h2 style="border: 2px solid Tomato; background-color:rgb(255, 99, 71); text-align: center;">ASSIGNMENT 4 : JAVASCRIPT CONCEPTS</h2>
+
+  <script>  
+      
+    const ratingData = [
+                {restaurant: 'KFC', rating:5},
+                {restaurant: 'Burger King', rating:4}, 
+                {restaurant: 'KFC', rating:3},
+                {restaurant: 'Domino', rating:2},
+                {restaurant: 'Subway', rating:3},
+                {restaurant: 'Domino', rating:1}, 
+                {restaurant: 'Subway', rating:4}, 
+                {restaurant: 'Pizza Hut', rating:5}
+                ]
+    
+    const restaurantOld = [];
+    
+    var RDNameOld = ""
+    var RDNameNew = ""
+    
+    var RDRating = 0
+    var RDRate = 0
+    var RDAverage = 0
+    var RDNumber = 0
+            
+    var xCount = 0
+    var zCount = 0
+
+    document.write (" -----------------------------------------------------------------------" + "<br>")
+    document.write (" Statement: (customer's rating data for multiple restaurants)" + "<br>")
+    document.write (" -----------------------------------------------------------------------" + "<br>")
+
+    restaurantOld.sort ()   // Just for ascending purposes by myself
+
+    for (var x in ratingData) {
+
+      RDNameOld = ratingData[x].restaurant
+
+      if (restaurantOld.includes (RDNameOld)) {
+
+      } else {
+
+      restaurantOld[zCount] = RDNameOld
+      zCount = zCount + 1
+
+      }
+      document.write ("{ restaurant: '"+ RDNameOld + "', Rating: " + ratingData[x].rating + "}, " + "<br>")
+    }
+
+    document.write (" -------------------------------------------------------------------------------------" + "<br>")
+    document.write (" Answer a : (Average rating for all the restaurant [ascending by name]) " + "<br>")
+    document.write (" -------------------------------------------------------------------------------------" + "<br>")
+
+    for (var x in restaurantOld) {
+                   
+        RDNameOld = restaurantOld[xCount]
+
+        for (var y in ratingData) {
+
+          RDNameNew = ratingData[y].restaurant
+          RDRating = ratingData[y].rating
+
+          if (RDNameNew == RDNameOld) {
+                    
+                    RDNumber = RDNumber + 1
+                    RDRate = RDRate + RDRating
+                                       
+           }
+
+        }
+
+        RDAverage = RDRate / RDNumber
+        
+        document.write ("{ restaurant: '"+ RDNameOld + "', averageRating: " + RDAverage + "}, " + "<br>")
+        document.write ("<br>")
+        xCount = xCount + 1
+        RDNumber = 0
+        RDRate = 0
+     
+      }
+        document.write (" ----------------------------------------------------------" + "<br>")
+        document.write (" Answer b :(that averageRating is greater than 4)  " + "<br>")
+        document.write (" ----------------------------------------------------------" + "<br>")
+
+        if (RDAverage > 4) {
+          
+          document.write (" Restaurant: "+  RDNameOld + " " + "<br>")
+        }           
+     
+</script>
+<h5 style="border: 2px solid Tomato ; background-color:rgb(255, 99, 71)"><strong>Assignment 4 Version 1.0 </strong><i> (All rights reserved)</i></h5>
+  </body>
+
+
+</html>
